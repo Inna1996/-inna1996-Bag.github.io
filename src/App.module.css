@@ -1,0 +1,95 @@
+body {
+    background-image: linear-gradient(to right, rgb(165, 30, 142), rgb(247, 199, 239), rgb(165, 30, 142));
+    height: 975px;
+}
+
+.main {
+    margin: auto;
+    width: max-content;
+    position: relative
+}
+
+.wrapper {
+    margin: auto;
+}
+
+
+.main_header {
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+.switchLanguage {
+    position: absolute;
+    right: 2%;
+    top: 4%;
+}
+
+.button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid rgb(236, 237, 241);
+    border-radius: 6px;
+    padding: 0.4rem;
+    transition: all 0.5s;
+    outline: none;
+    margin-right: 2px;
+}
+
+.button:hover {
+    background: rgb(235, 236, 241);
+    opacity: .7;
+    border: 1px solid #fff;
+    color: rgb(175, 20, 180);
+}
+
+.button:focus {
+    background: rgb(235, 236, 241);
+    border: 1px solid #fff;
+    color: rgb(175, 20, 180);
+}
+
+.logo {
+    background: url(./assets/images/whs.png)center center no-repeat;
+    width: 80px;
+    height: 30px;
+    position: absolute;
+    left: 2%;
+    top: 1%;
+}
+
+@media (max-width:720px) {
+    .button {
+        font-size: 15px;
+    }
+
+    .wrapper {
+        padding: 20px 8px 0 8px;
+    }
+
+    .switchLanguage {
+        right: 4%;
+        top: 3%;
+    }
+}
+
+@media (max-width:540px) {
+    .main {
+        padding-top: 17px;
+    }
+
+    body {
+        background: rgba(226, 151, 214, 0.877);
+    }
+
+    .switchLanguage {
+        top: 3%;
+    }
+}
+
+@media (max-width:4200px) {
+    .main {
+        padding-top: 25px;
+    }
+}
